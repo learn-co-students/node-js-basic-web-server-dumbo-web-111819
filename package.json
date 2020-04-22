@@ -7,11 +7,12 @@
     "test": "test"
   },
   "scripts": {
+    "start": "npx nodemon --exec npx babel-node src/server_.js",
     "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:learn-co-curriculum/node-js-basic-web-server.git"
+    "url": "git+ssh://git@github.com/learn-co-curriculum/node-js-basic-web-server.git"
   },
   "keywords": [
     "learn",
@@ -23,15 +24,26 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/node-js-basic-web-server#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
     "mocha-multi": "^0.9.0",
     "supertest": "^1.2.0"
   },
   "dependencies": {
-    "bcrypt": "^0.8.5",
+    "bcrypt": "^4.0.1",
     "body-parser": "^1.15.0",
+    "express": "^4.17.1",
     "finalhandler": "^0.4.1",
-    "router": "^1.1.4"
-  }
+    "minimatch": "^3.0.4",
+    "nodemon": "^2.0.3",
+    "pug": "^2.0.4",
+    "querystring": "^0.2.0",
+    "router": "^1.1.4",
+    "url": "^0.11.0"
+  },
+  "author": "",
+  "license": "ISC"
 }
